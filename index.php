@@ -63,8 +63,6 @@ if(isset($_GET['deletar_foto'])){
     <!-- Populate the gallery -->
     <div class="row">
       <?php
-      $count = 0;
-      $arrayIds = array();
       $stmt = $conn->prepare('SELECT id, img, data FROM fotos ORDER BY id');
       $stmt->execute();
 
@@ -72,10 +70,6 @@ if(isset($_GET['deletar_foto'])){
       if($stmt->rowCount() > 0){
         while($row=$stmt->fetch(PDO::FETCH_ASSOC)){
           extract($row);
-          array_push($arrayIds, $row['id']);
-          $count = $count +1;
-
-          echo ($stmt->rowCount());
           ?>
           <div class="fotoGrid">
             <div class="col-xs-4 text-center">
