@@ -2,9 +2,6 @@
 
 vieira.wanderson(at)gmail.com
 
-Desafio
-=======
-
 "Crie uma aplicação web onde seja possível cadastrar uma nova foto, ver a lista de fotos cadastradas e excluir uma foto.
 Nessa aplicação, faça uma página que exiba todas as fotos cadastradas em uma galeria como a da imagem em anexo chamada todas-fotos.jpg"
 
